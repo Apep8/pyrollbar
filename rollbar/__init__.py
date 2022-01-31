@@ -1458,7 +1458,7 @@ def _build_server_data():
     if argv:
          server_data['argv'] = argv
 
-    for key in ['branch', 'root']:
+    for key in ['branch', 'root', 'host']:
         if SETTINGS.get(key):
             server_data[key] = SETTINGS[key]
 
